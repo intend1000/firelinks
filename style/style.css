@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background: black;
+    color: white;
+}
+
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__list{
+    display: flex;
+}
+
+.header__list ul{
+    display: flex;
+}
+
+.header__logo{
+    display: flex;
+    column-gap: 13px;
+}
+
+.header__auth{
+    display: flex;
+}
+
+.header__auth, .header__auth select, .header__auth option{
+    background: none;
+    color: white;
+    border: none;
+}
+
+.header__auth button{
+    width: 137px;
+    height: 50px;    
+}
