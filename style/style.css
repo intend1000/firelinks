@@ -8,10 +8,12 @@ html{
     padding: 0;
     list-style: none;
     font-family: 'Prompt', sans-serif;
+    color: #fff;
 }
 
 body{
-    background-color: chocolate;
+    background: linear-gradient(58deg, #490B6F 0%, #1C2426 100%);
+
 }
 
 a{
@@ -47,10 +49,13 @@ ul{
     padding: 0 10px;
 }
 
+/* HEADER */
 .header{
-    padding: 15px;
+    padding: 15px 0;
     background: black;
     color: white;
+    background: linear-gradient(58deg, #490B6F 0%, #1C2426 100%);
+
 }
 
 .header__menu{
@@ -116,10 +121,11 @@ ul{
 .header__auth-buttons .reg{
     border: .5px solid white;
 }
+/* HEADER */
 
-
+/* FRONTPART */
 .frontpart{
-    padding: 92.23px 0 46.43px 0;
+    padding-top: 92.23px;
 }
 
 .frontpart__content{
@@ -138,3 +144,48 @@ ul{
 .frontpart__content p, .frontpart__content img{
     background: transparent;
 }
+/* FRONTPART */
+
+/* SERVICES */
+.services{
+    padding: 46.43px 0 25px 0;
+
+}
+
+.services .announce{
+    font-size: 32px;
+}
+
+.services__block{
+    display: flex;
+}
+
+.services__block-right{
+    display: flex;
+    column-gap: 20px;
+}
+
+.services__block-right-one, .services__block-right-two, .services__block-right-three{
+    width: 285px;
+    height: 248px;
+    border: 1px solid white;
+    border-radius: 27px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.services__block-right-top{
+    font-size: 32px;
+}
+
+.services__block-right-bottom{
+    font-size: 16px;
+}
+
+
+/* SERVICES */
+
+/* FOOTER */
+/* FOOTER */
