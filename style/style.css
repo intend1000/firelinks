@@ -116,3 +116,25 @@ ul{
 .header__auth-buttons .reg{
     border: .5px solid white;
 }
+
+
+.frontpart{
+    padding: 92.23px 0 46.43px 0;
+}
+
+.frontpart__content{
+    display: flex;
+}
+
+.frontpart__content p{
+    margin: auto;
+    color: #fff;
+    width: 707px;
+    height: 300px;
+    line-height: 120%;
+    font-size: 83px;
+}
+
+.frontpart__content p, .frontpart__content img{
+    background: transparent;
+}
