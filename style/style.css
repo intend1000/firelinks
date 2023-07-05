@@ -1,16 +1,54 @@
-*{
+html{
     box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: 'Prompt', sans-serif;
+}
+
+body{
+    background-color: chocolate;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: 'Prompt';
+    src: url(../fonts/Prompt/Prompt-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Prompt';
+    src: url(../fonts/Prompt/Prompt-Regular.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Prompt';
+    src: url(../fonts/Prompt/Prompt-Regular.ttf);
+    font-weight: 700;
 }
 
 .container{
-    width: 1200px;
+    width: 1220px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .header{
+    padding: 15px;
     background: black;
     color: white;
 }
@@ -22,10 +60,17 @@
 
 .header__list{
     display: flex;
+    column-gap: 45px;
 }
 
 .header__list ul{
     display: flex;
+    column-gap: 29px;
+    align-items: center;
+}
+
+.header__list ul li{
+    font-weight: 400;
 }
 
 .header__logo{
@@ -35,6 +80,7 @@
 
 .header__auth{
     display: flex;
+    column-gap: 38px;
 }
 
 .header__auth, .header__auth select, .header__auth option{
@@ -45,5 +91,28 @@
 
 .header__auth button{
     width: 137px;
-    height: 50px;    
+    height: 50px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.header__auth-buttons{
+    display: flex;
+    column-gap: 11px;
+}
+
+.header__auth-buttons button{
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.header__auth-buttons .enter{
+    background-color: rgba(51, 202, 255, 1);
+}
+
+.header__auth-buttons .reg{
+    border: .5px solid white;
 }
